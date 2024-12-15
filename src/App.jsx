@@ -1,5 +1,6 @@
-import Heropart from "./Heropart";
-import Nabbar from "./Nabbar";
+import Heropart from "./Pages/Heropart";
+import Nabbar from "./Pages/Nabbar";
+import Today from "./Pages/Today";
 
 
 const App = () => {
@@ -9,6 +10,7 @@ const App = () => {
       dfadfads
       <Nabbar/>
       <Heropart/>
+      <Today/>
       </div>
     </>
   );
