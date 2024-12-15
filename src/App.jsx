@@ -1,3 +1,4 @@
+import Heropart from "./Heropart";
 import Nabbar from "./Nabbar";
 
 
@@ -7,6 +8,7 @@ const App = () => {
       <div >
       dfadfads
       <Nabbar/>
+      <Heropart/>
       </div>
     </>
   );
