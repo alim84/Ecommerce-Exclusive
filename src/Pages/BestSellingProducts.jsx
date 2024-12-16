@@ -1,72 +1,33 @@
-import { FaArrowRightLong } from "react-icons/fa6";
-import { FaArrowLeftLong } from "react-icons/fa6";
 import { FaStar } from "react-icons/fa";
 import { FaEye } from "react-icons/fa";
 import { FaRegHeart } from "react-icons/fa";
 
-const Today = () => {
+const BestSellingProducts = () => {
   return (
     <>
       <div className="container mx-auto">
         <div className="">
-          <div className="flex items-center gap-2 mt-14">
+          <div className="flex items-center gap-2 ">
             <div className="w-[15px] h-[30px] bg-[#BD4444] rounded-r-md "></div>
             <h2 className="text-[#BD4444] text-xl font-mono font-bold">
-              Today
+              This Month
             </h2>
           </div>
           <div className=" flex mt-10   items-center justify-between ">
-            <div className="w-[200px]">
-              <h2 className="text-2xl font-bold">Flash Sales</h2>
+            <div className="">
+              <h2 className="text-2xl font-bold">Best Selling Products</h2>
             </div>
-            <div className="flex grid grid-cols-5 items-center ">
-              <div className=" ">
-                <h3 className="text-lg font-bold">Days</h3>
-                <div className="flex gap-3 ">
-                  {" "}
-                  <p className="text-xl font-bold ml-2 ">03 </p>
-                  <p className="text-red-500 font-bold text-lg ml-3 ">: </p>
-                </div>
-              </div>
-              <div className="">
-                <h3 className="text-lg font-bold">Hours</h3>
-                <div className="flex gap-3">
-                  {" "}
-                  <p className="text-xl font-bold ml-3 ">11 </p>
-                  <p className="text-red-500 font-bold text-lg ml-3 ">: </p>
-                </div>
-              </div>
-              <div className="items-center">
-                <h3 className="text-lg font-bold">Minutes</h3>
-                <div className="flex gap-3">
-                  {" "}
-                  <p className="text-xl font-bold ml-2 ">56 </p>
-                  <p className="text-red-500 font-bold text-lg ml-8">: </p>
-                </div>
-              </div>
-              <div className="">
-                <h3 className="text-lg font-bold ml-5">Second</h3>
-                <div className="flex gap-3">
-                  {" "}
-                  <p className="text-xl font-bold ml-8 ">32 </p>
-                </div>
-              </div>
-            </div>
-            <div className=" flex w-[200px] ml-56  ">
-              <div>
-                <button className="py-2 px-2 bg-red-200 rounded-lg mr-4">
-                  <FaArrowRightLong />
-                </button>
-                <button className="py-2 px-2 bg-red-200 rounded-lg ">
-                  <FaArrowLeftLong />
-                </button>
-              </div>
+
+            <div className=" flex w-[200px] mr-4  ">
+              <button className="py-2 px-6 bg-[#DB4444] rounded-lg  text-white ">
+                View All
+              </button>
             </div>
           </div>
         </div>
 
         <div className="flex gap-10 grid grid-cols-5">
-          <div className="mt-10 relative w-[270px] h-[250px rounded-sm] bg-gray-100 rounded-md   ">
+          <div className="mt-10 relative w-[270px] h-[250px rounded-sm] bg-gray-100 rounded-md mb-24  ">
             <img
               className="ml-10 shadow-md shadow-gray-300"
               src="/public/images/Frame613.png"
@@ -98,7 +59,7 @@ const Today = () => {
               </div>
             </div>
           </div>
-          <div className="mt-10 relative w-[270px] h-[250px rounded-sm] bg-gray-100 rounded-md  ">
+          <div className="mt-10 relative w-[270px] h-[250px rounded-sm] bg-gray-100 rounded-md mb-24  ">
             <img
               className="ml-10 shadow-md shadow-gray-300"
               src="/public/images/Frame613.png"
@@ -130,7 +91,7 @@ const Today = () => {
               </div>
             </div>
           </div>
-          <div className="mt-10 relative w-[270px] h-[250px rounded-sm] bg-gray-100 rounded-md   ">
+          <div className="mt-10 relative w-[270px] h-[250px rounded-sm] bg-gray-100 rounded-md mb-24  ">
             <img
               className="ml-10 shadow-md shadow-gray-300"
               src="/public/images/Frame613.png"
@@ -162,7 +123,7 @@ const Today = () => {
               </div>
             </div>
           </div>
-          <div className="mt-10 relative w-[270px] h-[250px rounded-sm] bg-gray-100 rounded-md  ">
+          <div className="mt-10 relative w-[270px] h-[250px rounded-sm] bg-gray-100 rounded-md mb-24  ">
             <img
               className="ml-10 shadow-md shadow-gray-300"
               src="/public/images/Frame613.png"
@@ -194,7 +155,7 @@ const Today = () => {
               </div>
             </div>
           </div>
-          <div className="mt-10 relative w-[270px] h-[250px rounded-sm] bg-gray-100 rounded-md   ">
+          <div className="mt-10 relative w-[270px] h-[250px rounded-sm] bg-gray-100 rounded-md mb-24  ">
             <img
               className="ml-10 shadow-md shadow-gray-300"
               src="/public/images/Frame613.png"
@@ -226,15 +187,10 @@ const Today = () => {
               </div>
             </div>
           </div>
-        </div>
-        <div className="flex justify-center mt-8 ">
-          <button className="py-3 px-12 bg-[#DB4444] text-white rounded-md mb-10 ">
-            View All Products
-          </button>
         </div>
       </div>
     </>
   );
 };
 
-export default Today;
+export default BestSellingProducts;
