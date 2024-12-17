@@ -1,3 +1,4 @@
+import Signup from "./component/Signup";
 import AddEnhance from "./Pages/AddEnhance";
 import BestSellingProducts from "./Pages/BestSellingProducts";
 import Category from "./Pages/Category";
@@ -25,6 +26,7 @@ const App = () => {
       <NewArrival/>
       <ServiceDelevary/>
       <Footer/>
+      <Signup/>
       </div>
     </>
   );

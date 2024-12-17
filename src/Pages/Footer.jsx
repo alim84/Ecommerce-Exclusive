@@ -1,3 +1,4 @@
+import { IoSendSharp } from "react-icons/io5";
 import { CiFacebook } from "react-icons/ci";
 import { FaYoutube } from "react-icons/fa";
 import { FaLinkedin } from "react-icons/fa";
@@ -9,63 +10,48 @@ const Footer = () => {
       <div className="container mx-auto  "></div>
       <div className="bg-black">
         <div className="container mx-auto py-10 px-20">
-          <hr></hr>
-          <h2 className="text-3xl  font-bold  text-center text-white py-4 ">
-            গৃহিনী
-          </h2>
-          <div className=" flex justify-center gap-6 text-2xl text-white py-4">
-            <CiFacebook />
-            <FaYoutube />
-            <FaLinkedin />
-            <FaXTwitter />
-          </div>
-          <hr></hr>
           <div className="flex justify-between text-white pt-12">
             <div className="w-[200px] text-pretty">
-              <h2 className="font-bold text-xl text-red-400 mb-4">
-                IN A BRIEF
-              </h2>
-              <p className="text-justify">
-                Khaas food is an innovative agri-tech startup based in
-                Bangladesh with the vision to create a future where safe agro
-                food is the standard, not the exception. We envision and inspire
-                positive impact in the world where every individual has access
-                to responsibly sourced, safe and nutritious products at its
-                originality that support their health and the health of the
-                environment.
+              <h2 className="font-bold text-xl text-red-400 mb-4">Exclusive</h2>
+              <p className="text-justify text-xl font-semibold mb-3">
+                Subscribe
               </p>
               <div>
-                <h3 className="font-bold text-xl text-red-400 pt-4 mb-4">
-                  Head office:
-                </h3>
-                <p>
-                  Floor- 8, 15/1-15/2, Biswas Shawpnil, Jigatala, Dhaka 1209
-                  khaasfood@gmail.com
-                </p>
+                <p>Get 10% off your first order</p>
+                <input
+                  className="py-2 px-10 outline-none border-2 relative border-white bg-black text-gray-300 rounded-md mt-10"
+                  type="text"
+                  placeholder="Enter your email"
+                ></input>
+                <button>
+                  <IoSendSharp className="absolate translate-x-[240px] translate-y-[-30px]" />
+                </button>
               </div>
             </div>
             <div className="w-[200px]">
-              <h2 className="font-bold text-xl text-red-400 mb-4">
-                CONTACT US
-              </h2>
-              <p>
-                09612002255 01708183874 (WhatsApp Only)
-                customercare@khaasfood.com Corporate Sales & Retailer Only
-              </p>
+              <h2 className="font-bold text-xl text-red-400 mb-4">Support</h2>
+              <p>Azimpur, Dhaka, Bangladesh.</p>
+              <p>exclusive@gmail.com</p>
+              <p>+8801717-986768</p>
             </div>
-            <div>
-              <h2 className="font-bold text-xl text-red-400 mb-2">
-                JOIN OUR COMMUNITY
-              </h2>
-              <p> Official FB Group</p>
-              <h2 className="font-bold text-xl text-red-400 pt-4 mb-2">
-                VISIT OUR SHOP
-              </h2>
-              <p> Official FB Group</p>
-              <h2 className="font-bold text-xl text-red-400 pt-4 mb-2">
-                DOWNLOAD OUR APP
-              </h2>
-              <p> Official FB Group</p>
+            <div className="grid grid-cols-1">
+              <h2 className="font-bold text-xl text-red-400 mb-2">Account</h2>
+
+              <a className="text-[16px] hover:text-[19px]" href="">
+                My Account
+              </a>
+              <a className="text-[16px] hover:text-[19px]" href="">
+                Login/Register
+              </a>
+              <a className="text-[16px] hover:text-[19px]" href="">
+                Cart
+              </a>
+              <a className="text-[16px] hover:text-[19px]" href="">
+                Wishlist
+              </a>
+              <a className="text-[16px] hover:text-[19px]" href="">
+                Shop
+              </a>
             </div>
             <div>
               <h2 className="font-bold text-xl text-red-400 mb-4">
@@ -79,8 +65,34 @@ const Footer = () => {
                 <li>FAQs </li>
                 <li>About Us</li>
                 <li>Contact Us</li>
-                <li>Our Blog </li>
               </ul>
+            </div>
+            <div>
+              <h2 className="font-bold text-xl text-red-400 mb-4">
+                Download App
+              </h2>
+              <h3 className="text-white text-[16px] mb-6">
+                Save $3 with App New User Only
+              </h3>
+              <div className="grid grid-cols-2">
+                <div className="gap-5">
+                  <img src="/public/images/Qr Code.png"></img>
+                </div>
+                <div className="">
+                  <div>
+                    <img src="/public/images/GooglePlay.png"></img>
+                  </div>
+                  <div>
+                    <img src="/public/images/AppStore.png"></img>
+                  </div>
+                </div>
+              </div>
+              <div className=" flex justify-center gap-6 text-2xl text-white py-4">
+                <CiFacebook />
+                <FaYoutube />
+                <FaLinkedin />
+                <FaXTwitter />
+              </div>
             </div>
           </div>
         </div>
