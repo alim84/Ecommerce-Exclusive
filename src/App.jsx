@@ -10,13 +10,15 @@ import NewArrival from "./Pages/NewArrival";
 import OurProducts from "./Pages/OurProducts";
 import ServiceDelevary from "./Pages/ServiceDelevary";
 import Today from "./Pages/Today";
-import Wishlist from "./Pages/Wishlist";
+import Wishlist from "./component/Wishlist";
+import Cart from "./component/Cart";
+import Billingdetails from "./component/Billingdetails";
 
 const App = () => {
   return (
     <>
       <div>
-        dfadfads
+       
         <Nabbar />
         <Heropart />
         <Today />
@@ -30,6 +32,8 @@ const App = () => {
         <Signup />
         <Login />
         <Wishlist/>
+        <Cart/>
+        <Billingdetails/>
       </div>
     </>
   );
