@@ -36,45 +36,44 @@ const Category = () => {
           </div>
         </div>
 
-        <div className="flex gap-10 grid grid-cols-6">
-          <div className="mt-10 relative w-[170px] h-[145px] rounded-sm  rounded-md mb-24 border-4 hover:border-none hover:bg-[#DB4444] hover:text-white  ">
+        <div className=" gap-10 grid grid-cols-6">
+          <div className="mt-10 relative w-[170px] h-[145px] rounded-sm  mb-24 border-4 hover:border-none hover:bg-[#DB4444] hover:text-white  ">
             <div className="absolute translate-x-[60px] translate-y-[30px] ">
               <CiMobile4 className="text-5xl " />
               <h3>Phone</h3>
             </div>
           </div>
-          <div className="mt-10 relative w-[170px] h-[145px] rounded-sm  rounded-md mb-24 border-4 hover:border-none hover:bg-[#DB4444] hover:text-white  ">
+          <div className="mt-10 relative w-[170px] h-[145px] rounded-sm  mb-24 border-4 hover:border-none hover:bg-[#DB4444] hover:text-white  ">
             <div className="absolute translate-x-[60px] translate-y-[30px] ">
               <RiComputerLine className="text-5xl" />
               <h3>Computer</h3>
             </div>
           </div>
-          <div className="mt-10 relative w-[170px] h-[145px] rounded-sm  rounded-md mb-24 border-4 hover:border-none hover:bg-[#DB4444] hover:text-white  ">
+          <div className="mt-10 relative w-[170px] h-[145px] rounded-sm  mb-24 border-4 hover:border-none hover:bg-[#DB4444] hover:text-white  ">
             <div className="absolute translate-x-[60px] translate-y-[30px] ">
               <BsSmartwatch className="text-5xl" />
               <h3>SmartWatch</h3>
             </div>
           </div>
-          <div className="mt-10 relative w-[170px] h-[145px] rounded-sm  rounded-md mb-24 border-4 hover:border-none hover:bg-[#DB4444] hover:text-white  ">
+          <div className="mt-10 relative w-[170px] h-[145px] rounded-sm  mb-24 border-4 hover:border-none hover:bg-[#DB4444] hover:text-white  ">
             <div className="absolute translate-x-[60px] translate-y-[30px] ">
               <IoCameraOutline className="text-5xl" />
               <h3>Camera</h3>
             </div>
           </div>
-          <div className="mt-10 relative w-[170px] h-[145px] rounded-sm  rounded-md mb-24 border-4 hover:border-none hover:bg-[#DB4444] hover:text-white  ">
+          <div className="mt-10 relative w-[170px] h-[145px] rounded-sm  mb-24 border-4 hover:border-none hover:bg-[#DB4444] hover:text-white  ">
             <div className="absolute translate-x-[60px] translate-y-[30px] ">
               <FaHeadphonesSimple className="text-5xl" />
               <h3>HeadPhones</h3>
             </div>
           </div>
-          <div className="mt-10 relative w-[170px] h-[145px] rounded-sm  rounded-md mb-24 border-4 hover:border-none hover:bg-[#DB4444] hover:text-white  ">
+          <div className="mt-10 relative w-[170px] h-[145px] rounded-sm  mb-24 border-4 hover:border-none hover:bg-[#DB4444] hover:text-white  ">
             <div className="absolute translate-x-[60px] translate-y-[30px] ">
               <FaGamepad className="text-5xl" />
               <h3>Gaming</h3>
             </div>
           </div>
         </div>
-      
       </div>
     </>
   );

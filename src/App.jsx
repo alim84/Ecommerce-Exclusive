@@ -1,3 +1,4 @@
+import Login from "./component/Login";
 import Signup from "./component/Signup";
 import AddEnhance from "./Pages/AddEnhance";
 import BestSellingProducts from "./Pages/BestSellingProducts";
@@ -9,24 +10,26 @@ import NewArrival from "./Pages/NewArrival";
 import OurProducts from "./Pages/OurProducts";
 import ServiceDelevary from "./Pages/ServiceDelevary";
 import Today from "./Pages/Today";
-
+import Wishlist from "./Pages/Wishlist";
 
 const App = () => {
   return (
     <>
-      <div >
-      dfadfads
-      <Nabbar/>
-      <Heropart/>
-      <Today/>
-      <Category/>
-      <BestSellingProducts/>
-      <AddEnhance/>
-      <OurProducts/>
-      <NewArrival/>
-      <ServiceDelevary/>
-      <Footer/>
-      <Signup/>
+      <div>
+        dfadfads
+        <Nabbar />
+        <Heropart />
+        <Today />
+        <Category />
+        <BestSellingProducts />
+        <AddEnhance />
+        <OurProducts />
+        <NewArrival />
+        <ServiceDelevary />
+        <Footer />
+        <Signup />
+        <Login />
+        <Wishlist/>
       </div>
     </>
   );

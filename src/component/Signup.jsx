@@ -9,7 +9,7 @@ const Signup = () => {
           </div>
           <div>
             <h2 className="text-[36px] text-mono font-bold">
-              Create an accoun
+              Create an Account
             </h2>
             <p className="text-[16px] mt-[10px]">Enter your details below</p>
             <input
