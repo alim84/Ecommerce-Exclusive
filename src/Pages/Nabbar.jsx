@@ -1,6 +1,7 @@
 import { CiSearch } from "react-icons/ci";
 import { IoCart } from "react-icons/io5";
 import { GiSelfLove } from "react-icons/gi";
+import { Link } from "react-router-dom";
 
 const Nabbar = () => {
   return (
@@ -16,11 +17,17 @@ const Nabbar = () => {
           <div>
             <h1 className="text-3xl font-mono font-semibold">Exclusive</h1>
           </div>
-          <div className="">
+          <div>
             <ul className="flex gap-12">
-              <li>Home</li>
-              <li>Contract</li>
-              <li>Sign In</li>
+              <Link to="/">
+                <li className=" hover:text-teal-900">Home</li>
+              </Link>
+              <Link to="/contact">
+              <li className=" hover:text-teal-900">Contract</li>
+              </Link>
+              <Link to="/login">
+                <li className=" hover:text-teal-900">Sign in</li>
+              </Link>
             </ul>
           </div>
           <div className="flex items-center gap-2">
@@ -30,8 +37,25 @@ const Nabbar = () => {
               placeholder="Search Your Item"
             ></input>
             <CiSearch className="absolate translate-x-[-50px]" />
-            <GiSelfLove />
-            <IoCart />
+
+            <div>
+              <Link
+                to="/wishlist"
+                className="block text-md font-semibold pl-4 p-2 hover:font-bold hover:text-red-500"
+              >
+                {" "}
+                <GiSelfLove />
+              </Link>
+            </div>
+            <div>
+              <Link
+                to="/cart"
+                className="block text-md font-semibold pl-4 p-2 hover:font-bold hover:text-red-500"
+              >
+                {" "}
+                <IoCart />
+              </Link>
+            </div>
           </div>
         </div>
       </div>

@@ -3,6 +3,7 @@ import { CiFacebook } from "react-icons/ci";
 import { FaYoutube } from "react-icons/fa";
 import { FaLinkedin } from "react-icons/fa";
 import { FaXTwitter } from "react-icons/fa6";
+import { Link } from "react-router-dom";
 
 const Footer = () => {
   return (
@@ -36,22 +37,36 @@ const Footer = () => {
             </div>
             <div className="grid grid-cols-1">
               <h2 className="font-bold text-xl text-red-400 mb-2">Account</h2>
-
+              <Link to="profile">
+              
               <a className="text-[16px] hover:text-[19px]" href="">
                 My Account
               </a>
+              </Link>
+              <Link to="/login">
+              
               <a className="text-[16px] hover:text-[19px]" href="">
                 Login/Register
               </a>
+              </Link>
+              <Link to="/cart">
+              
               <a className="text-[16px] hover:text-[19px]" href="">
                 Cart
               </a>
+              </Link>
+              <Link to="/wishlist">
+              
               <a className="text-[16px] hover:text-[19px]" href="">
                 Wishlist
               </a>
+              </Link>
+              <Link to="/">
               <a className="text-[16px] hover:text-[19px]" href="">
                 Shop
               </a>
+              
+              </Link>
             </div>
             <div>
               <h2 className="font-bold text-xl text-red-400 mb-4">
@@ -64,7 +79,9 @@ const Footer = () => {
                 <li>Corporate Deal</li>
                 <li>FAQs </li>
                 <li>About Us</li>
-                <li>Contact Us</li>
+              <Link to="/contact">
+              <li>Contact Us</li>
+              </Link>
               </ul>
             </div>
             <div>

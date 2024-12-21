@@ -8,12 +8,13 @@ import {
 import Home from "./Pages/Home";
 import Rootlayout from "./layout/Rootlayout";
 import Login from "./component/Login";
-import Wishlist from "./Pages/Wishlist";
+import Wishlist from "./component/userdetails/Wishlist";
 import Cart from "./component/Cart";
 import Billingdetails from "./component/Billingdetails";
 import Profile from "./component/userdetails/Profile";
 import PersonalInfo from "./component/userdetails/PersonalInfo";
 import MyOrders from "./component/userdetails/MyOrders";
+import Contact from "./Pages/Contact";
 
 const router = createBrowserRouter(
   createRoutesFromElements(
@@ -22,13 +23,16 @@ const router = createBrowserRouter(
         <Route index element={<Home />} />
         <Route path="signup" element={<Signup />} />
         <Route path="signin" element={<Login />} />
-        <Route path="wishlist" element={<Wishlist />} />
         <Route path="cart" element={<Cart />} />
         <Route path="billdetails" element={<Billingdetails />} />
+        <Route path="wishlist" element={<Wishlist />} />
+        <Route path="login" element={<Login />} />
+        <Route path="signup" element={<Signup />} />
+        <Route path="contact" element={<Contact />} />
 
         {/* User Profile Routes */}
         <Route path="profile" element={<Profile />}>
-          <Route path="personalinfo" element={<PersonalInfo />} />
+          <Route index element={<PersonalInfo />} />
           <Route path="myorders" element={<MyOrders />} />
         </Route>
       </Route>

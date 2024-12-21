@@ -1,4 +1,5 @@
 
+import { Link } from 'react-router-dom';
 const Login = () => {
   return (
     <>
@@ -23,16 +24,20 @@ const Login = () => {
               placeholder="Password"
               type="text"
             ></input>
+<div className=' flex gap-6  items-center mb-5 '>
+<Link to="/signup">
 
-            <button className="bg-[#DB4444] px-[70px] text-white font-semibold py-3 rounded-sm shadow-lg shadow-gray-200 block mb-5">
-              {" "}
-              Create Account
-            </button>
-           
-          
-              <a className="underline hover:font-semibold text-[#DB4444]" href="">
-                Forget Password ?
-              </a>
+<button className="bg-[#DB4444] px-[70px] text-white font-semibold py-3 rounded-sm shadow-lg shadow-gray-200 block ">
+  {" "}
+  Create Account
+</button>
+</Link>
+
+
+  <a className="underline hover:font-semibold text-[#DB4444]" href="">
+    Forget Password ?
+  </a>
+</div>
             
           </div>
         </div>

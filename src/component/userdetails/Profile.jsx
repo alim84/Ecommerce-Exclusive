@@ -19,19 +19,7 @@ const Profile = () => {
                   Manage My Account
                 </h2>
               </div>
-              <div className="flex  items-center mt-5  ">
-                <div className="w-[20px] h-[20px] bg-gray-400 rounded-r-full ml-8 hover:rotate-180 hover:bg-red-300  "></div>
 
-                <div>
-                  <Link
-                    to="/profile/personalinfo"
-                    className="block text-md font-semibold pl-4 p-2 hover:font-bold hover:text-red-500"
-                  >
-                    {" "}
-                    Personal Info
-                  </Link>
-                </div>
-              </div>
               <div className="flex  items-center mt-5 ">
                 <div className="w-[20px] h-[20px] bg-gray-400 rounded-r-full ml-8 hover:rotate-180 hover:bg-red-300  "></div>
                 <div>
@@ -102,7 +90,7 @@ const Profile = () => {
                 <div className="w-[20px] h-[20px] bg-gray-400 rounded-r-full ml-8 hover:rotate-180 hover:bg-red-300  "></div>
                 <div>
                   <Link
-                    to="/profile/personalinfo"
+                    to="/wishlist"
                     className="block text-md font-semibold pl-4 p-2 hover:font-bold hover:text-red-500"
                   >
                     {" "}

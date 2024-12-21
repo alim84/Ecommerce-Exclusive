@@ -1,7 +1,7 @@
 const Cart = () => {
   return (
     <>
-      <div className="container mx-auto">
+      <div className="container mx-auto mt-24">
         <div className="grid grid-cols-4 mx-auto items-center text-xl font-mono font-bold mb-6">
           <div>Product</div>
 
