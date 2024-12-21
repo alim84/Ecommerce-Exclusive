@@ -12,6 +12,8 @@ import Wishlist from "./Pages/Wishlist";
 import Cart from "./component/Cart";
 import Billingdetails from "./component/Billingdetails";
 import Profile from "./component/userdetails/Profile";
+import PersonalInfo from "./component/userdetails/PersonalInfo";
+import MyOrders from "./component/userdetails/MyOrders";
 
 const router = createBrowserRouter(
   createRoutesFromElements(
@@ -25,7 +27,10 @@ const router = createBrowserRouter(
         <Route path="billdetails" element={<Billingdetails />} />
 
         {/* User Profile Routes */}
-        <Route path="profile" element={<Profile />}></Route>
+        <Route path="profile" element={<Profile />}>
+          <Route path="personalinfo" element={<PersonalInfo />} />
+          <Route path="myorders" element={<MyOrders />} />
+        </Route>
       </Route>
     </>
   )
