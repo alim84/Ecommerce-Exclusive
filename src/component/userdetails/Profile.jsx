@@ -8,22 +8,13 @@ const Profile = () => {
     <>
       <div className="container mx-auto grid grid-cols-4 justify-between mt-10 ">
         <div className="w-[300px]">
-          <div className="  ">
-            <h2 className="font-bold text-2xl text-center mt-5">
-              Profile Name
-            </h2>
-            <div className=" flex justify-center rounded-full h-[150px] ">
-              <img
-                className=" rounded-full mt-5 "
-                src="/public/Cake-1.jpg"
-              ></img>
-            </div>
-          </div>
           <div>
             <div className="flex items-center gap-2  py-3 bg-red-400 pl-2 shadow-md shadow-gray-200 mt-5">
               {" "}
               <MdDashboardCustomize className="text-white text-2xl" />
-              <h2 className="text-xl font-semibold text-white">Dashboard</h2>
+              <h2 className="text-xl font-semibold text-white">
+                Manage My Account
+              </h2>
             </div>
             <div className="flex  items-center mt-5 ">
               <div className="w-[20px] h-[20px] bg-red-400 rounded-r-full"></div>
