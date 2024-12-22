@@ -4,14 +4,17 @@ import { GiSelfLove } from "react-icons/gi";
 import { TbTruckDelivery } from "react-icons/tb";
 import { GiReturnArrow } from "react-icons/gi";
 
+import { FaEye } from "react-icons/fa";
+import { FaRegHeart } from "react-icons/fa";
+
 const Addchart = () => {
   const [counter, setCounter] = useState(0);
 
   return (
     <>
       <div className="container mx-auto mt-24 mb-20">
-        <div className="grid grid-cols-4 gap-4">
-          <div className="">
+        <div className="grid grid-cols-4 justify-between gap-4">
+          <div className=" ">
             <img
               className="mb-4 w-[150px] h-[120px]"
               src="/public/images/Frame895.png"
@@ -25,7 +28,7 @@ const Addchart = () => {
               src="/public/images/Frame895.png"
             ></img>
           </div>
-          <div className=" row-span-2">
+          <div className="  rounded-md">
             {" "}
             <img src="/public/images/Frame894.png"></img>
           </div>
@@ -115,6 +118,176 @@ const Addchart = () => {
                   <h4>Return Delivery</h4>
                   <p>Free 30 Days Delivery Returns. Details</p>
                 </div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div className=" mt-8">
+          <div className="flex items-center gap-2 ">
+            <div className="w-[15px] h-[30px] bg-[#BD4444] rounded-r-md "></div>
+            <h2 className="text-[#BD4444] text-xl font-mono font-bold">
+              This Month
+            </h2>
+          </div>
+        </div>
+        <div className=" gap-10 grid grid-cols-5">
+          <div className="mt-10 relative w-[270px] h-[250px rounded-sm] bg-gray-100 rounded-md mb-24  ">
+            <img
+              className="ml-10 shadow-md shadow-gray-300"
+              src="/public/images/Frame613.png"
+            ></img>
+            <div className="w-[30px] h-[20px] bg-red-500 rounded-sm absolute translate-y-[-170px]">
+              <h5 className="text-white text-[9px] mt-[3px] ">-40%</h5>
+            </div>
+
+            <button>
+              {" "}
+              <FaRegHeart className="bg-white text-gray-700 w-[20px] h-[15px] absolute translate-x-[235px] translate-y-[-180px]" />
+            </button>
+            <button>
+              {" "}
+              <FaEye className="bg-white text-gray-700 w-[20px] h-[15px] absolute translate-x-[235px] translate-y-[-140px]" />
+            </button>
+
+            <div className="ml-3">
+              <h4 className="font-semibold mb-1">HAVIT HV-G92 Gamepad</h4>
+              <div className="flex gap-6 mb-3 ">
+                <p className="text-[#BD4444]">$120</p>
+                <p className=" text-gray-800 line-through">$160 </p>
+              </div>
+              <div className="flex items-center">
+                <FaStar className="text-yellow-600 pb-2 text-2xl  " />
+                <FaStar className="text-yellow-600 pb-2 text-2xl  " />
+                <FaStar className="text-yellow-600 pb-2 text-2xl  " />
+                <FaStar className="text-yellow-600 pb-2 text-2xl  " />
+              </div>
+            </div>
+          </div>
+          <div className="mt-10 relative w-[270px] h-[250px rounded-sm] bg-gray-100 rounded-md mb-24  ">
+            <img
+              className="ml-10 shadow-md shadow-gray-300"
+              src="/public/images/Frame613.png"
+            ></img>
+            <div className="w-[30px] h-[20px] bg-red-500 rounded-sm absolute translate-y-[-170px]">
+              <h5 className="text-white text-[9px] mt-[3px] ">-40%</h5>
+            </div>
+
+            <button>
+              {" "}
+              <FaRegHeart className="bg-white text-gray-700 w-[20px] h-[15px] absolute translate-x-[235px] translate-y-[-180px]" />
+            </button>
+            <button>
+              {" "}
+              <FaEye className="bg-white text-gray-700 w-[20px] h-[15px] absolute translate-x-[235px] translate-y-[-140px]" />
+            </button>
+
+            <div className="ml-3">
+              <h4 className="font-semibold mb-1">HAVIT HV-G92 Gamepad</h4>
+              <div className="flex gap-6 mb-3 ">
+                <p className="text-[#BD4444]">$120</p>
+                <p className=" text-gray-800 line-through">$160 </p>
+              </div>
+              <div className="flex items-center">
+                <FaStar className="text-yellow-600 pb-2 text-2xl  " />
+                <FaStar className="text-yellow-600 pb-2 text-2xl  " />
+                <FaStar className="text-yellow-600 pb-2 text-2xl  " />
+                <FaStar className="text-yellow-600 pb-2 text-2xl  " />
+              </div>
+            </div>
+          </div>
+          <div className="mt-10 relative w-[270px] h-[250px rounded-sm] bg-gray-100 rounded-md mb-24  ">
+            <img
+              className="ml-10 shadow-md shadow-gray-300"
+              src="/public/images/Frame613.png"
+            ></img>
+            <div className="w-[30px] h-[20px] bg-red-500 rounded-sm absolute translate-y-[-170px]">
+              <h5 className="text-white text-[9px] mt-[3px] ">-40%</h5>
+            </div>
+
+            <button>
+              {" "}
+              <FaRegHeart className="bg-white text-gray-700 w-[20px] h-[15px] absolute translate-x-[235px] translate-y-[-180px]" />
+            </button>
+            <button>
+              {" "}
+              <FaEye className="bg-white text-gray-700 w-[20px] h-[15px] absolute translate-x-[235px] translate-y-[-140px]" />
+            </button>
+
+            <div className="ml-3">
+              <h4 className="font-semibold mb-1">HAVIT HV-G92 Gamepad</h4>
+              <div className="flex gap-6 mb-3 ">
+                <p className="text-[#BD4444]">$120</p>
+                <p className=" text-gray-800 line-through">$160 </p>
+              </div>
+              <div className="flex items-center">
+                <FaStar className="text-yellow-600 pb-2 text-2xl  " />
+                <FaStar className="text-yellow-600 pb-2 text-2xl  " />
+                <FaStar className="text-yellow-600 pb-2 text-2xl  " />
+                <FaStar className="text-yellow-600 pb-2 text-2xl  " />
+              </div>
+            </div>
+          </div>
+          <div className="mt-10 relative w-[270px] h-[250px rounded-sm] bg-gray-100 rounded-md mb-24  ">
+            <img
+              className="ml-10 shadow-md shadow-gray-300"
+              src="/public/images/Frame613.png"
+            ></img>
+            <div className="w-[30px] h-[20px] bg-red-500 rounded-sm absolute translate-y-[-170px]">
+              <h5 className="text-white text-[9px] mt-[3px] ">-40%</h5>
+            </div>
+
+            <button>
+              {" "}
+              <FaRegHeart className="bg-white text-gray-700 w-[20px] h-[15px] absolute translate-x-[235px] translate-y-[-180px]" />
+            </button>
+            <button>
+              {" "}
+              <FaEye className="bg-white text-gray-700 w-[20px] h-[15px] absolute translate-x-[235px] translate-y-[-140px]" />
+            </button>
+
+            <div className="ml-3">
+              <h4 className="font-semibold mb-1">HAVIT HV-G92 Gamepad</h4>
+              <div className="flex gap-6 mb-3 ">
+                <p className="text-[#BD4444]">$120</p>
+                <p className=" text-gray-800 line-through">$160 </p>
+              </div>
+              <div className="flex items-center">
+                <FaStar className="text-yellow-600 pb-2 text-2xl  " />
+                <FaStar className="text-yellow-600 pb-2 text-2xl  " />
+                <FaStar className="text-yellow-600 pb-2 text-2xl  " />
+                <FaStar className="text-yellow-600 pb-2 text-2xl  " />
+              </div>
+            </div>
+          </div>
+          <div className="mt-10 relative w-[270px] h-[250px rounded-sm] bg-gray-100 rounded-md mb-24  ">
+            <img
+              className="ml-10 shadow-md shadow-gray-300"
+              src="/public/images/Frame613.png"
+            ></img>
+            <div className="w-[30px] h-[20px] bg-red-500 rounded-sm absolute translate-y-[-170px]">
+              <h5 className="text-white text-[9px] mt-[3px] ">-40%</h5>
+            </div>
+
+            <button>
+              {" "}
+              <FaRegHeart className="bg-white text-gray-700 w-[20px] h-[15px] absolute translate-x-[235px] translate-y-[-180px]" />
+            </button>
+            <button>
+              {" "}
+              <FaEye className="bg-white text-gray-700 w-[20px] h-[15px] absolute translate-x-[235px] translate-y-[-140px]" />
+            </button>
+
+            <div className="ml-3">
+              <h4 className="font-semibold mb-1">HAVIT HV-G92 Gamepad</h4>
+              <div className="flex gap-6 mb-3 ">
+                <p className="text-[#BD4444]">$120</p>
+                <p className=" text-gray-800 line-through">$160 </p>
+              </div>
+              <div className="flex items-center">
+                <FaStar className="text-yellow-600 pb-2 text-2xl  " />
+                <FaStar className="text-yellow-600 pb-2 text-2xl  " />
+                <FaStar className="text-yellow-600 pb-2 text-2xl  " />
+                <FaStar className="text-yellow-600 pb-2 text-2xl  " />
               </div>
             </div>
           </div>
