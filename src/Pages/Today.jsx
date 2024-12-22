@@ -19,7 +19,7 @@ const Today = () => {
             <div className="w-[200px]">
               <h2 className="text-2xl font-bold">Flash Sales</h2>
             </div>
-            <div className="flex grid grid-cols-5 items-center ">
+            <div className=" grid grid-cols-5 items-center ">
               <div className=" ">
                 <h3 className="text-lg font-bold">Days</h3>
                 <div className="flex gap-3 ">
@@ -65,7 +65,7 @@ const Today = () => {
           </div>
         </div>
 
-        <div className="flex gap-10 grid grid-cols-5">
+        <div className="gap-10 grid grid-cols-5">
           <div className="mt-10 relative w-[270px] h-[250px rounded-sm] bg-gray-100 rounded-md   ">
             <img
               className="ml-10 shadow-md shadow-gray-300"

@@ -55,7 +55,7 @@ const Contact = () => {
               ></input>
             </div>
             <div className="mt-10">
-              <textarea className="outline-none border-2 border-2 border-blue-200 hover:border-red-200 w-[780px] h-[100px]"></textarea>
+              <textarea className="outline-none border-2  border-blue-200 hover:border-red-200 w-[780px] h-[100px]"></textarea>
             </div>
             <div className="flex justify-center mt-10">
               <button className="px-10 py-2 text-white bg-red-400 rounded-md font-mono">

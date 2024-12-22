@@ -24,14 +24,15 @@ const Profile = () => {
                 <div className="w-[20px] h-[20px] bg-gray-400 rounded-r-full ml-8 hover:rotate-180 hover:bg-red-300  "></div>
                 <div>
                   <Link
-                    to=""
+                    to="/addcart"
                     className="block text-md font-semibold pl-4 p-2 hover:font-bold hover:text-red-500"
                   >
                     {" "}
-                    My Dashboard
+                    Add Cart
                   </Link>
                 </div>
               </div>
+
               <div className="flex  items-center mt-5 ">
                 <div className="w-[20px] h-[20px] bg-gray-400 rounded-r-full ml-8 hover:rotate-180 hover:bg-red-300  "></div>
                 <div>
