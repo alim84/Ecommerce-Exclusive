@@ -15,6 +15,7 @@ import Profile from "./component/userdetails/Profile";
 import PersonalInfo from "./component/userdetails/PersonalInfo";
 import MyOrders from "./component/userdetails/MyOrders";
 import Contact from "./Pages/Contact";
+import Addchart from "./component/userdetails/Addchart";
 
 const router = createBrowserRouter(
   createRoutesFromElements(
@@ -29,6 +30,7 @@ const router = createBrowserRouter(
         <Route path="login" element={<Login />} />
         <Route path="signup" element={<Signup />} />
         <Route path="contact" element={<Contact />} />
+        <Route path="addcart" element={<Addchart />} />
 
         {/* User Profile Routes */}
         <Route path="profile" element={<Profile />}>
