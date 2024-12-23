@@ -66,7 +66,7 @@ const Today = () => {
         </div>
 
         <div className="gap-10 grid grid-cols-5">
-          <div className="mt-10 relative w-[270px] h-[250px rounded-sm] bg-gray-100 rounded-md   ">
+          <div className=" mt-10 relative w-[270px] h-[250px rounded-sm] bg-gray-100 rounded-md   ">
             <img
               className="ml-10 shadow-md shadow-gray-300"
               src="/public/images/Frame613.png"
@@ -83,6 +83,11 @@ const Today = () => {
               {" "}
               <FaEye className="bg-white text-gray-700 w-[20px] h-[15px] absolute translate-x-[235px] translate-y-[-140px]" />
             </button>
+            <div className="text-center hover:visible ">
+              <button className="visible py-[5px] px-24 bg-black rounded-md text-center text-white mb-4 hover:font-semibold ">
+                Add Cart
+              </button>
+            </div>
 
             <div className="ml-3">
               <h4 className="font-semibold mb-1">HAVIT HV-G92 Gamepad</h4>

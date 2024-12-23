@@ -1,5 +1,4 @@
-
-import { Link } from 'react-router-dom';
+import { Link } from "react-router-dom";
 const Login = () => {
   return (
     <>
@@ -13,7 +12,7 @@ const Login = () => {
               Log in to Exclusive
             </h2>
             <p className="text-[16px] mt-[10px]">Enter your details below</p>
-       
+
             <input
               className="px-20 py-3  outline-none border-b-2 border-gary-500 block mb-6 mt-20"
               placeholder="Email or Mobile Number"
@@ -24,21 +23,21 @@ const Login = () => {
               placeholder="Password"
               type="text"
             ></input>
-<div className=' flex gap-6  items-center mb-5 '>
-<Link to="/signup">
+            <div className=" flex gap-6  items-center mb-5 ">
+              <Link to="/signup">
+                <button className="bg-[#DB4444] px-[70px] text-white font-semibold py-3 rounded-sm shadow-lg shadow-gray-200 block ">
+                  {" "}
+                  Login
+                </button>
+              </Link>
 
-<button className="bg-[#DB4444] px-[70px] text-white font-semibold py-3 rounded-sm shadow-lg shadow-gray-200 block ">
-  {" "}
-  Create Account
-</button>
-</Link>
-
-
-  <a className="underline hover:font-semibold text-[#DB4444]" href="">
-    Forget Password ?
-  </a>
-</div>
-            
+              <a
+                className="underline hover:font-semibold text-[#DB4444]"
+                href=""
+              >
+                Forget Password ?
+              </a>
+            </div>
           </div>
         </div>
       </div>

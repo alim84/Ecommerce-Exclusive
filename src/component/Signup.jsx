@@ -28,20 +28,21 @@ const Signup = () => {
               type="text"
             ></input>
 
-            <button className="bg-[#DB4444] px-[70px] text-white font-semibold py-3 rounded-sm shadow-lg shadow-gray-200 block mb-5">
-              {" "}
-              Create Account
-            </button>
-            <div className="flex relative content-start">
-              <FcGoogle className="absolate translate-x-[45px] translate-y-[18px]" />
-              <button className="border-2  border-black outline-none px-[54px] py-3 rounded-sm shadow-lg shadow-gray-200 block mb-5">
+            <div className=" relative content-start">
+              <button className="bg-[#DB4444] px-[70px] text-white font-semibold py-3 rounded-sm shadow-lg shadow-gray-200 block mb-5">
+                {" "}
+                Create Account
+              </button>
+
+              <FcGoogle className="absolate translate-x-[30px] translate-y-[34px]" />
+              <button className="border-2  border-black outline-none px-[54px] py-3 rounded-sm shadow-lg shadow-gray-200 mb-5">
                 {" "}
                 Sign up with Google
               </button>
             </div>
             <div className="flex gap-5 ">
               <p>Already have account?</p>{" "}
-              <a className="underline hover:font-semibold" href="">
+              <a className="underline hover:font-semibold" href="/login">
                 Log in
               </a>
             </div>
