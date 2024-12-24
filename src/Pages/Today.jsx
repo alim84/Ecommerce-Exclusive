@@ -3,19 +3,12 @@ import { FaArrowLeftLong } from "react-icons/fa6";
 import { FaStar } from "react-icons/fa";
 import { FaEye } from "react-icons/fa";
 import { FaRegHeart } from "react-icons/fa";
-import Slider from "react-slick";
+
 import { Link } from "react-router-dom";
 import date from "date-and-time";
 
 const Today = () => {
-  let today = {
-    dots: true,
-    infinite: true,
-    speed: 500,
-    slidesToShow: 1,
-    slidesToScroll: 1,
-  };
-
+ 
   const now = new Date();
 
   // const [addcart, setaddcart] = useState(false);
@@ -92,7 +85,7 @@ const Today = () => {
         </div>
 
         <div className="grid grid-cols-5 gap-10">
-          <Slider {...today} className="">
+         
             <div className="">
               <div className=" mt-10 relative w-[270px] h-[250px rounded-sm] bg-gray-100 rounded-md   ">
                 <img
@@ -137,7 +130,7 @@ const Today = () => {
                 </div>
               </div>
             </div>
-          </Slider>
+      
         </div>
         <div className="flex justify-center mt-8 ">
           <button className="py-3 px-12 bg-[#DB4444] text-white rounded-md mb-10 ">

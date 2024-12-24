@@ -8,23 +8,39 @@ const AddEnhance = () => {
             <h3 className="text-white text-[48px] font-[600] mt-[20px]">
               Enhance Your <br></br> Music Experience
             </h3>
-            <div className="flex grid grid-cols-5 items-center   ">
+            <div className=" grid grid-cols-5 items-center   ">
               <div className=" w-[100px] h-[100px] bg-white rounded-full flex justify-center items-center ">
-                <p className="text-xl font-bold ml-2">03 </p>
-                <h3 className="text-lg font-bold">Days</h3>
+                <div>
+                  <p className="text-xl font-bold ml-2 text-[#DB4444]">03 </p>
+                  <div>
+                    <h3 className="text-lg font-bold text-gray-500">Days</h3>
+                  </div>
+                </div>
               </div>
               <div className=" w-[100px] h-[100px] bg-white rounded-full flex justify-center items-center">
-                <p className="text-xl font-bold ml-3 ">11 </p>
-                <h3 className="text-lg font-bold">Hours</h3>
+                <div>
+                  <p className="text-xl font-bold ml-3 text-[#DB4444] ">11 </p>
+                  <div>
+                    <h3 className="text-lg font-bold text-gray-500">Hours</h3>
+                  </div>
+                </div>
               </div>
               <div className=" w-[100px] h-[100px] bg-white rounded-full flex justify-center items-center">
-                <p className="text-xl font-bold ml-2 ">56 </p>
-                <h3 className="text-lg font-bold">Minutes</h3>
+                <div>
+                  <p className="text-xl font-bold ml-5 text-[#DB4444] ">56 </p>
+                  <div>
+                    <h3 className="text-lg font-bold text-gray-500">Minutes</h3>
+                  </div>
+                </div>
               </div>
               <div className=" w-[100px] h-[100px] bg-white rounded-full flex justify-center items-center">
-                <p className="text-xl font-bold  ">32 </p>
+                <div>
+                  <p className="text-xl font-bold ml-5 text-[#DB4444] ">32 </p>
 
-                <h3 className="text-lg font-bold ">Second</h3>
+                  <div>
+                    <h3 className="text-lg font-bold text-gray-500 ">Second</h3>
+                  </div>
+                </div>
               </div>
             </div>
           </div>
