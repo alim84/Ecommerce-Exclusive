@@ -1,4 +1,3 @@
-import { useState } from "react";
 import { FaArrowRightLong } from "react-icons/fa6";
 import { FaArrowLeftLong } from "react-icons/fa6";
 import { FaStar } from "react-icons/fa";
@@ -6,6 +5,7 @@ import { FaEye } from "react-icons/fa";
 import { FaRegHeart } from "react-icons/fa";
 import Slider from "react-slick";
 import { Link } from "react-router-dom";
+import date from "date-and-time";
 
 const Today = () => {
   let today = {
@@ -15,6 +15,9 @@ const Today = () => {
     slidesToShow: 1,
     slidesToScroll: 1,
   };
+
+  const now = new Date();
+
   // const [addcart, setaddcart] = useState(false);
   return (
     <>
@@ -35,7 +38,10 @@ const Today = () => {
                 <h3 className="text-lg font-bold">Days</h3>
                 <div className="flex gap-3 ">
                   {" "}
-                  <p className="text-xl font-bold ml-2 ">03 </p>
+                  <p className="text-xl font-bold ml-2 ">
+                    {" "}
+                    {date.format(now, "DD")}{" "}
+                  </p>
                   <p className="text-red-500 font-bold text-lg ml-3 ">: </p>
                 </div>
               </div>
@@ -43,7 +49,10 @@ const Today = () => {
                 <h3 className="text-lg font-bold">Hours</h3>
                 <div className="flex gap-3">
                   {" "}
-                  <p className="text-xl font-bold ml-3 ">11 </p>
+                  <p className="text-xl font-bold ml-3 ">
+                    {" "}
+                    {date.format(now, "HH")}{" "}
+                  </p>
                   <p className="text-red-500 font-bold text-lg ml-3 ">: </p>
                 </div>
               </div>
@@ -51,7 +60,10 @@ const Today = () => {
                 <h3 className="text-lg font-bold">Minutes</h3>
                 <div className="flex gap-3">
                   {" "}
-                  <p className="text-xl font-bold ml-2 ">56 </p>
+                  <p className="text-xl font-bold ml-2 ">
+                    {" "}
+                    {date.format(now, "mm")}{" "}
+                  </p>
                   <p className="text-red-500 font-bold text-lg ml-8">: </p>
                 </div>
               </div>
@@ -59,7 +71,10 @@ const Today = () => {
                 <h3 className="text-lg font-bold ml-5">Second</h3>
                 <div className="flex gap-3">
                   {" "}
-                  <p className="text-xl font-bold ml-8 ">32 </p>
+                  <p className="text-xl font-bold ml-8 ">
+                    {" "}
+                    {date.format(now, "ss")}{" "}
+                  </p>
                 </div>
               </div>
             </div>
@@ -77,7 +92,7 @@ const Today = () => {
         </div>
 
         <div className="grid grid-cols-5 gap-10">
-          <Slider {...today}>
+          <Slider {...today} className="">
             <div className="">
               <div className=" mt-10 relative w-[270px] h-[250px rounded-sm] bg-gray-100 rounded-md   ">
                 <img
