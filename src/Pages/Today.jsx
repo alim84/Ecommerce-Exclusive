@@ -84,12 +84,14 @@ const Today = () => {
         </div>
 
         <div className="grid grid-cols-5 gap-10">
-          <div className="">
-            <div className=" mt-10 relative w-[270px] h-[250px rounded-sm] bg-gray-100 rounded-md   ">
-              <img
-                className="ml-10 shadow-md shadow-gray-300"
-                src="/public/images/Frame613.png"
-              ></img>
+          <div className=" ">
+            <div className=" mt-10 relative w-[270px] h-[350px] rounded-sm bg-gray-100 rounded-md   ">
+              <div className="w-[200px] h-[180px]">
+                <img
+                  className="ml-10 shadow-md  bg-gray-100 shadow-gray-300"
+                  src="/public/images/Frame613.png"
+                ></img>
+              </div>
               <div className="w-[30px] h-[20px] bg-red-500 rounded-sm absolute translate-y-[-170px]">
                 <h5 className="text-white text-[9px] mt-[3px] ">-40%</h5>
               </div>
@@ -129,10 +131,10 @@ const Today = () => {
             </div>
           </div>
           <div className="">
-            <div className=" mt-10 relative w-[270px] h-[250px rounded-sm] bg-gray-100 rounded-md   ">
-              <div className="w-[200px] h-[200px]">
+            <div className=" mt-10 relative w-[270px] h-[350px] rounded-sm bg-gray-100 rounded-md   ">
+              <div className="w-[200px] h-[180px]">
                 <img
-                  className="ml-10  shadow-md shadow-gray-300"
+                  className="ml-10 bg-gray-100 shadow-md shadow-gray-300"
                   src="/public/images/Frame694.png"
                 ></img>
               </div>
