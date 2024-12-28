@@ -6,10 +6,19 @@ import { FaRegHeart } from "react-icons/fa";
 
 import { Link } from "react-router-dom";
 import date from "date-and-time";
+import { useDispatch, useSelector } from "react-redux";
+import { productdetailsInfo } from "../slices/ProductSlice";
 
 const Today = () => {
-  const now = new Date();
+  let dispatch = useDispatch();
+  let data = useSelector((state) => state.productInfo);
 
+  console.log(data);
+
+  let handleSubmit = () => {
+    dispatch(productdetailsInfo());
+  };
+  const now = new Date();
   // const [addcart, setaddcart] = useState(false);
   return (
     <>
@@ -149,18 +158,18 @@ const Today = () => {
               </Link>
 
               <Link to="/addcart">
-                <button>
+                <button onClick={handleSubmit}>
                   {" "}
                   <FaEye className="bg-white text-gray-700 w-[20px] h-[15px] absolute translate-x-[235px] translate-y-[-140px]" />
                 </button>
               </Link>
-
-              <div className="text-center  ">
-                <button className="opacity-[0] hover:opacity-100 cursor-pointer transition-all 0.4s py-[5px] px-24 bg-black rounded-md text-center  text-white mb-4 hover:font-semibold ">
-                  Add Cart
-                </button>
-              </div>
-
+              <Link to="/addcart">
+                <div className="text-center  ">
+                  <button className="opacity-[0] hover:opacity-100 cursor-pointer transition-all 0.4s py-[5px] px-24 bg-black rounded-md text-center  text-white mb-4 hover:font-semibold ">
+                    Add Cart
+                  </button>
+                </div>
+              </Link>
               <div className="ml-3">
                 <h4 className="font-semibold">HAVIT HV-G92 Gamepad</h4>
                 <div className="flex gap-6 mb-3 ">
