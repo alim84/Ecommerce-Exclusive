@@ -18,6 +18,7 @@ import MyOrders from "./component/userdetails/MyOrders";
 import Contact from "./Pages/Contact";
 import Addchart from "./component/userdetails/Addchart";
 import OurStory from "./Pages/OurStory";
+import Uploadapi from "./api/uploadapi";
 
 const router = createBrowserRouter(
   createRoutesFromElements(
@@ -34,6 +35,7 @@ const router = createBrowserRouter(
         <Route path="contact" element={<Contact />} />
         <Route path="addcart" element={<Addchart />} />
         <Route path="ourstory" element={<OurStory />} />
+        <Route path="uploadapi" element={<Uploadapi />} />
 
         {/* User Profile Routes */}
         <Route path="profile" element={<Profile />}>
