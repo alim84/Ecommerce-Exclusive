@@ -52,13 +52,17 @@ const Signup = () => {
             navigate("/");
 
             const user = userCredential.user;
+            console.log(user);
           }, 2000);
         })
         .catch((error) => {
           setTimeout(() => {
             setLoder(false);
+            if (error.code.includes("auth/email-already-in-use")) {
+              setEmailerror("your email already in use");
+            }
 
-            const errorMessage = error.message;
+            // const errorMessage = error.message;
 
             console.log(error);
           }, 2000);
@@ -133,6 +137,7 @@ const Signup = () => {
                     width="200"
                     color="#DB4444"
                     ariaLabel="progress-bar-loading"
+                    strokeColor="red"
                     wrapperStyle={{}}
                     wrapperClass="mx-auto"
                   />
