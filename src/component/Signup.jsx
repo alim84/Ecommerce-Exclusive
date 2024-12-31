@@ -2,13 +2,13 @@ import { useState } from "react";
 import { FcGoogle } from "react-icons/fc";
 import { FaEyeSlash } from "react-icons/fa6";
 import { FaEye } from "react-icons/fa";
-import { Link } from "react-router-dom";
+import { Link, useNavigate } from "react-router-dom";
 import { ProgressBar } from "react-loader-spinner";
 import { getAuth, createUserWithEmailAndPassword } from "firebase/auth";
 
 const Signup = () => {
   const auth = getAuth();
-
+  let navigate = useNavigate();
   let [name, setName] = useState("");
   let [email, setEmail] = useState("");
   let [password, setPassword] = useState("");
@@ -16,7 +16,7 @@ const Signup = () => {
   let [emailerror, setEmailerror] = useState("");
   let [passworderror, setPassworderror] = useState("");
   let [passwordshow, setPasswordshow] = useState(false);
-  let [spnershow, setSpnershow] = useState(false);
+  let [loader, setLoder] = useState(false);
 
   let handleName = (e) => {
     setName(e.target.value);
@@ -42,17 +42,26 @@ const Signup = () => {
     if (!password) {
       setPassworderror("Password is required");
     }
-    setSpnershow(true);
+
     if (email && name && password) {
+      setLoder(true);
       createUserWithEmailAndPassword(auth, email, password)
         .then((userCredential) => {
-          const user = userCredential.user;
+          setTimeout(() => {
+            setLoder(false);
+            navigate("/");
+
+            const user = userCredential.user;
+          }, 2000);
         })
         .catch((error) => {
-          const errorCode = error.code;
-          const errorMessage = error.message;
+          setTimeout(() => {
+            setLoder(false);
 
-          console.log(error);
+            const errorMessage = error.message;
+
+            console.log(error);
+          }, 2000);
         });
     }
   };
@@ -113,19 +122,21 @@ const Signup = () => {
               />
             )}
             {passworderror && (
-              <p className="text-red-500 text-[10px] mb-12">{passworderror}</p>
+              <p className="text-red-500 text-[10px] ">{passworderror}</p>
             )}
             <div className=" relative content-start">
-              {spnershow ? (
-                <ProgressBar
-                  visible={true}
-                  height="80"
-                  width="200"
-                  color="#DB4444"
-                  ariaLabel="progress-bar-loading"
-                  wrapperStyle={{}}
-                  wrapperClass=""
-                />
+              {loader ? (
+                <div>
+                  <ProgressBar
+                    visible={true}
+                    height="80"
+                    width="200"
+                    color="#DB4444"
+                    ariaLabel="progress-bar-loading"
+                    wrapperStyle={{}}
+                    wrapperClass="mx-auto"
+                  />
+                </div>
               ) : (
                 <button
                   onClick={handleSubmit}
