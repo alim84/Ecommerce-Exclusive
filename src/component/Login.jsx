@@ -2,15 +2,17 @@ import { useState } from "react";
 import { FaEyeSlash } from "react-icons/fa6";
 import { FaEye } from "react-icons/fa";
 import { Link } from "react-router-dom";
+import { getAuth, signInWithEmailAndPassword } from "firebase/auth";
+
 const Login = () => {
+  const auth = getAuth();
   let [email, setEmail] = useState("");
   let [password, setPassword] = useState("");
- 
+
   let [emailerror, setEmailerror] = useState("");
   let [passworderror, setPassworderror] = useState("");
   let [passwordshow, setPasswordshow] = useState(false);
 
- 
   let handleEmail = (e) => {
     setEmail(e.target.value);
     setEmailerror("");
@@ -20,7 +22,6 @@ const Login = () => {
     setPassworderror("");
   };
   let handleSubmit = () => {
-   
     if (!email) {
       setEmailerror("Email is required");
     } else if (!/^\w+([\.-]?\w+)*@\w+([\.-]?\w+)*(\.\w{2,3})+$/.test(email)) {
@@ -28,6 +29,22 @@ const Login = () => {
     }
     if (!password) {
       setPassworderror("Password is required");
+    }
+    if (email && password) {
+      signInWithEmailAndPassword(auth, email, password)
+        .then((userCredential) => {
+          const user = userCredential.user;
+          console.log(user);
+        })
+        .catch((error) => {
+          const errorCode = error.code;
+
+          if (error.code.includes("auth/invalid-credential")) {
+            setEmailerror("Invalid-credential");
+          }
+
+          console.log(errorCode);
+        });
     }
   };
   return (
@@ -91,8 +108,14 @@ const Login = () => {
                 </button>
               </div>
               <div className="mt-2 ">
-                <Link className="text-green-800 mr-10" to="/signup"> Sign Up</Link>
-                <Link className="text-red-500 " to="/"> Forget password?</Link>
+                <Link className="text-green-800 mr-10" to="/signup">
+                  {" "}
+                  Sign Up
+                </Link>
+                <Link className="text-red-500 " to="/">
+                  {" "}
+                  Forget password?
+                </Link>
               </div>
             </div>
           </div>
